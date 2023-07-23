@@ -1,0 +1,5 @@
+    The FlightEntertainmentSystem class contains the main method where you can provide the sample data for movie durations and flight duration.
+    The findPairOfMovies method accepts a list of movie durations and the flight duration as inputs and returns a list containing the pair of movies with the longest total runtime that meets the flight duration constraint.
+    I initialize the maxRuntime variable to keep track of the longest total runtime found so far.
+    I used nested loops to iterate through all pairs of movies from the list and calculate their total runtime.
+    If the total runtime is less than or equal to flightDuration - 30 (to ensure the second movie ends before the flight arrival) and greater than the current maxRuntime, I update the result list with the current pair of movies, and update maxRuntime.
